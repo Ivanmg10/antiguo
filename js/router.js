@@ -2,7 +2,7 @@ window.onbeforeunload = function() {
     window.setTimeout(function () { 
         window.location = '/';
     }, 0); 
-    window.onbeforeunload = null; // necessary to prevent infinite loop, that kills your browser 
+    window.onbeforeunload = null;
 }
 
 const route = (event) => {
@@ -15,8 +15,11 @@ const route = (event) => {
 const routes = {
     404: "/pages/404.html",
     "/": "/pages/index.html",
-    "/about": "/pages/about.html",
     "/historia": "/pages/historia.html",
+    "/centro": "/pages/centro.html",
+    "/desierto": "/pages/desierto.html",
+    "/planea": "/pages/planea.html",
+    "/contacto": "/pages/contacto.html"
 };
 
 const handleLocation = async () => {

@@ -6,6 +6,10 @@ body {
     
 }
 
+.main-page {
+    background-image: url("../images/fondo-1.jpg");
+}
+
 p {
     margin-block-start: 0;
 }
