@@ -1,3 +1,10 @@
+window.onbeforeunload = function() { 
+    window.setTimeout(function () { 
+        window.location = '/';
+    }, 0); 
+    window.onbeforeunload = null; // necessary to prevent infinite loop, that kills your browser 
+}
+
 const route = (event) => {
     event = event || window.event;
     event.preventDefault();
@@ -9,7 +16,7 @@ const routes = {
     404: "/pages/404.html",
     "/": "/pages/index.html",
     "/about": "/pages/about.html",
-    "/lorem": "/pages/lorem.html",
+    "/historia": "/pages/historia.html",
 };
 
 const handleLocation = async () => {

@@ -3,19 +3,11 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     height: 100%;
+    
 }
 
 p {
     margin-block-start: 0;
-    text-indent: 1rem;
-}
-
-hr {
-    border: none;
-    height: 1px;
-    background-color: lightgray;
-    width: 40px;
-    margin: 1.5rem 0 1rem 0;
 }
 
 #root {
@@ -32,9 +24,11 @@ hr {
 .page-container {
     display: flex;
     flex-direction: column;
-
-    padding: 0 1rem;
+    text-align: left;
+  
+    padding: 0 3rem;
 }
+
 
 .align-center {
     align-items: center;
