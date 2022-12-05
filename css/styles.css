@@ -1,13 +1,12 @@
 html,
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 0;
     height: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
     
-}
-
-.main-page {
-    background-image: url("../images/fondo-1.jpg");
+    
 }
 
 p {
@@ -17,50 +16,50 @@ p {
 #root {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+
+    background-color: #b2bec3;
+}
+
+
+
+.main-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+    
+
     height: 100%;
 }
 
-#main-page {
-    flex-grow: 1;
+.carousel-image {
+    width: 100%;
+    margin: 0;
+    padding: 1em;
+    /* height: 85vh; */
+}
+
+.first-part{
+    width: 50%;
+}
+
+.second-part{
+    width: 50%;
+    margin-top: 10px;
+    
+}
+
+.main-text-div {
+    width: 30%;
+    margin: 1em;
+}
+
+.carruseles {
+    width: 50%;
+    max-height: 50vh;
+    margin-top: 10px;
 }
 
 
-.page-container {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-  
-    padding: 0 3rem;
-}
 
-
-.align-center {
-    align-items: center;
-}
-
-.socials-container {
-    display: flex;
-    justify-content: space-between;
-}
-
-.socials-card {
-    display: flex;
-    align-items: center;
-
-    border: 1px solid lightgray;
-    border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
-    margin: 1rem;
-
-    text-decoration: none;
-    color: unset;
-}
-
-.socials-card:hover {
-    background-color: lightgray;
-}
-
-.socials-card > i {
-    font-size: 1.5rem;
-    margin-right: 0.5rem;
-}
